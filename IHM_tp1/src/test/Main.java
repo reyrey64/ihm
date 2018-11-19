@@ -15,10 +15,12 @@ public class Main extends Application {
 		rectangle.setFill(Color.RED); 
 		final Pane root = new Pane(); 
 		root.getChildren().setAll(rectangle); 
+		
+		
 		final Scene scene = new Scene(root, 300, 250); 
-		primaryStage.setTitle("Test dans Eclipse"); 
+		primaryStage.setTitle("Menu"); 
 		primaryStage.setScene(scene); 
-		primaryStage.show(); 
+		primaryStage.show(); // test
 	} 
   
 	public static void main(String... args) { 
