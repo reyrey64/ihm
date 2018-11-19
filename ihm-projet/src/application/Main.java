@@ -7,7 +7,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
-
+//test
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
