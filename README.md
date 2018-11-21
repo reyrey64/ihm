@@ -1,2 +1,0 @@
-# ihm
-TP d'iHM
