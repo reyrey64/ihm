@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <AnchorPane prefHeight="650.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="303.0" layoutY="22.0" mnemonicParsing="false" text="Se connecter" />
+            <Button layoutX="434.0" layoutY="22.0" mnemonicParsing="false" text="S'inscrire" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="113.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField layoutX="132.0" layoutY="150.0" prefHeight="25.0" prefWidth="284.0" text="Choisis la langue que tu veux apprendre" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="133.0" fitWidth="158.0" layoutX="34.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../home/7/sbhazim001/Téléchargements/angleterre.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="213.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox layoutX="192.0" layoutY="193.0" prefWidth="150.0" promptText="Anglais" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
