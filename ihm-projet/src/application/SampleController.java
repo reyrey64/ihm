@@ -16,6 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 
 public class SampleController {
+
 	
 	@FXML
     // fx:id="combo"

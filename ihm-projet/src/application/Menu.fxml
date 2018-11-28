@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <top>
+      <Pane prefHeight="650.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="-3.0" prefHeight="73.0" prefWidth="550.0" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
