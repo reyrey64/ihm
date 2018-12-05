@@ -16,7 +16,7 @@
                   <Image url="@../../../logo-mondia-langues-2.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="344.0" layoutY="19.0" prefHeight="25.0" prefWidth="92.0" text="Menu de choix">
+            <Label layoutX="364.0" layoutY="19.0" prefHeight="25.0" prefWidth="56.0" text="Exercices">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -43,17 +43,32 @@
             </ImageView>
          </children>
       </Pane>
-      <Button layoutX="312.0" layoutY="160.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Atelier">
+      <Button layoutX="113.0" layoutY="126.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="218.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Exercice 1">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Button>
-      <Button layoutX="312.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Outils">
+      <Button layoutX="444.0" layoutY="126.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="218.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Exercice 2">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Button>
-      <Button layoutX="312.0" layoutY="440.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Magazines">
+      <Button layoutX="444.0" layoutY="556.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="218.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Exercice 6">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Button>
+      <Button layoutX="113.0" layoutY="332.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="218.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Exercice 3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="113.0" layoutY="556.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="218.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Exercice 5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="444.0" layoutY="332.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="218.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-radius: 30; -fx-border-style: solid;" text="Exerci 4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

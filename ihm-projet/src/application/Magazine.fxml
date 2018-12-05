@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Pane prefHeight="62.0" prefWidth="750.0" style="-fx-background-color: #449D91;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="61.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../logo-mondia-langues-2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="363.0" layoutY="19.0" prefHeight="25.0" prefWidth="67.0" text="Magazines">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="645.0" layoutY="13.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="101.0" style="-fx-background-radius: 30; -fx-background-color: lightgreen; -fx-border-style: solid; -fx-border-radius: 30;" text="Déconnexion">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="581.0" layoutY="23.0" text="JeanLouis">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="83.0" layoutY="11.0" mnemonicParsing="false" style="-fx-background-color: lightgreen; -fx-border-style: solid; -fx-background-radius: 10; -fx-border-radius: 10;" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="42.0" fitWidth="67.0" layoutX="149.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../1280px-Flag_of_the_United_Kingdom.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="496.0" fitWidth="517.0" layoutX="217.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../téléchargement%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="396.0" layoutY="658.0" text="1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="362.0" layoutY="654.0" mnemonicParsing="false" style="-fx-background-color: lightgreen; -fx-border-style: solid; -fx-background-radius: 10; -fx-border-radius: 10;" text="&lt;" />
+      <Button layoutX="411.0" layoutY="654.0" mnemonicParsing="false" style="-fx-background-color: lightgreen; -fx-border-style: solid; -fx-border-radius: 10; -fx-background-radius: 10;" text="&gt;" />
+   </children>
+</Pane>
