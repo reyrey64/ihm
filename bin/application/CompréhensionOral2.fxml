@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ExosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="62.0" layoutX="203.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="387.0" />
+      <Text layoutX="220.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compréhesion orale">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="185.0" layoutX="143.0" layoutY="354.0" stroke="BLACK" strokeType="INSIDE" width="489.0" />
+      <RadioButton fx:id="rb1" layoutX="182.0" layoutY="385.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="169.0" selected="true" text="Chicken">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rb2" layoutX="415.0" layoutY="385.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="169.0" text="Kitchen" toggleGroup="$group">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb3" layoutX="182.0" layoutY="466.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="169.0" text="Listen" toggleGroup="$group">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb4" layoutX="415.0" layoutY="466.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="169.0" text="Children" toggleGroup="$group">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="valid2" layoutX="322.0" layoutY="562.0" mnemonicParsing="false" onAction="#ClickedTerminer" prefHeight="53.0" prefWidth="122.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Valider">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ProgressBar fx:id="progress" layoutX="280.0" layoutY="169.0" prefHeight="42.0" prefWidth="222.0" progress="0.57" />
+      <ImageView fx:id="error2" fitHeight="35.0" fitWidth="33.0" layoutX="304.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../img/error.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="error3" fitHeight="35.0" fitWidth="33.0" layoutX="565.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../img/error.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="correct" fitHeight="33.0" fitWidth="35.0" layoutX="558.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../img/correct.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="error1" fitHeight="35.0" fitWidth="33.0" layoutX="331.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../img/error.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="suivant" layoutX="331.0" layoutY="561.0" mnemonicParsing="false" onAction="#ClickedSuivant" prefHeight="53.0" prefWidth="122.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Suivant" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="audio1" fitHeight="62.0" fitWidth="57.0" layoutX="363.0" layoutY="279.0" onMousePressed="#makeSound2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/play.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="270.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quel mot entendez-vous ?">
+         <font>
+            <Font name="Dyuthi" size="24.0" />
+         </font>
+      </Text>
+      <Pane prefHeight="62.0" prefWidth="750.0" style="-fx-background-color: #9fc9d6;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="14.0" layoutY="4.0" onMouseClicked="#ClickedAccueil" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <image>
+<Image url="@../../img/logo-mondia-langues-2.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="598.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="122.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Déconnexion">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="86.0" layoutY="12.0" mnemonicParsing="false" onAction="#ClickedRetour" style="-fx-background-color: lightblue; -fx-border-style: solid; -fx-background-radius: 10; -fx-border-radius: 10;" text="&lt;">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="33.0" fitWidth="67.0" layoutX="143.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" style="border-style: solid; border-width: 5px;">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../img/angleterre.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="512.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="77.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Profil">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="419.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="82.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Outil">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="319.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="92.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Magazine">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="219.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="92.0" style="-fx-background-radius: 30; -fx-background-color: #7c9da7; -fx-border-style: solid; -fx-border-radius: 30;" text="Exercice">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

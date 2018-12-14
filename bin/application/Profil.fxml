@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfilController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="62.0" layoutX="247.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="287.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="216.0" layoutX="192.0" layoutY="370.0" stroke="BLACK" strokeType="INSIDE" width="366.0" />
+      <TextField alignment="BOTTOM_LEFT" editable="false" layoutX="360.0" layoutY="194.0" text="Nicolas64" />
+      <Label layoutX="217.0" layoutY="198.0" text="Nom de compte">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField alignment="BOTTOM_LEFT" editable="false" layoutX="360.0" layoutY="232.0" text="nicolas.64@gmail.com" />
+      <ComboBox fx:id="langueChoice" layoutX="360.0" layoutY="271.0" onAction="#ClickedLevelChoice" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="217.0" layoutY="346.0" text="Progression">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="237.0" text="Adresse mail">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="276.0" text="Langues">
+               <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="312.0" text="Niveaux">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="levelChoice" layoutX="359.0" layoutY="307.0" onAction="#ClickedLevelChoice" prefHeight="25.0" prefWidth="170.0" />
+      <ProgressBar fx:id="progress1" layoutX="360.0" layoutY="380.0" prefHeight="20.0" prefWidth="170.0" progress="1.0" />
+      <ProgressBar fx:id="progress2" layoutX="360.0" layoutY="415.0" prefHeight="20.0" prefWidth="170.0" progress="1.0" />
+      <ProgressBar fx:id="progress4" layoutX="360.0" layoutY="485.0" prefHeight="20.0" prefWidth="170.0" progress="0.57" />
+      <ProgressBar fx:id="progress5" layoutX="360.0" layoutY="520.0" prefHeight="20.0" prefWidth="170.0" progress="0.0" />
+      <ProgressBar fx:id="progress6" layoutX="360.0" layoutY="555.0" prefHeight="20.0" prefWidth="170.0" progress="0.0" />
+      <Label layoutX="217.0" layoutY="383.0" text="Exercice 1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+            <Label layoutX="217.0" layoutY="418.0" text="Exercice 2">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+            <Label layoutX="217.0" layoutY="453.0" text="Exercice 3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+            <Label layoutX="217.0" layoutY="488.0" text="Exercice 4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+            <Label layoutX="217.0" layoutY="523.0" text="Exercice 5">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+            <Label layoutX="217.0" layoutY="558.0" text="Exercice 6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Text fx:id="pourc1" layoutX="301.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100%">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="338.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="394.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="progress3" layoutX="361.0" layoutY="451.0" prefHeight="20.0" prefWidth="170.0" progress="0.57" />
+      <Text fx:id="pourc2" layoutX="301.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100%">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="pourc3" layoutX="301.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="pourc4" layoutX="301.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="pourc5" layoutX="301.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0%">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="pourc6" layoutX="301.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0%">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Pane prefHeight="62.0" prefWidth="750.0" style="-fx-background-color: #9fc9d6;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="14.0" layoutY="4.0" onMouseClicked="#ClickedAccueil" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <image>
+<Image url="@../../img/logo-mondia-langues-2.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="598.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="122.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Déconnexion">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="86.0" layoutY="12.0" mnemonicParsing="false" onAction="#ClickedRetour" style="-fx-background-color: lightblue; -fx-border-style: solid; -fx-background-radius: 10; -fx-border-radius: 10;" text="&lt;">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="33.0" fitWidth="67.0" layoutX="143.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" style="border-style: solid; border-width: 5px;">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../img/angleterre.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="512.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="77.0" style="-fx-background-radius: 30; -fx-background-color: #7c9da7; -fx-border-style: solid; -fx-border-radius: 30;" text="Profil">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="419.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="82.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Outil">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="319.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="92.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Magazine">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="219.0" layoutY="13.0" mnemonicParsing="false" onAction="#ClickedTest" prefHeight="33.0" prefWidth="92.0" style="-fx-background-radius: 30; -fx-background-color: lightblue; -fx-border-style: solid; -fx-border-radius: 30;" text="Exercice">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>
